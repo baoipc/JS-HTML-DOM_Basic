@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  </head>
+  <body>
+    <div id="demo">
+      <p id="p1">BivO</p>
+      <p id="p2">It's in 2022</p>
+      <p>18</p>
+    </div>
+  <button id="myBtn">Click to remove!</button>
+  <p id="myP"></p>
+    <script>
+        let x = document.getElementById("myBtn").addEventListener("click",solve);
+        function solve()
+        {
+          var list = document.getElementById("demo");
+          list.removeChild(list.childNodes[0]);
+        }
+    </script>
+  </body>
+</html>
